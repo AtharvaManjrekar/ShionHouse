@@ -1,0 +1,1541 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* preloader Styling */
+
+#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#preloader.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.boxes {
+  display: flex;
+  /* align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: white;
+  filter: blur(10px) contrast(18);
+  mix-blend-mode: screen; */
+}
+
+.box {
+  width: 25px;
+  height: 25px;
+  margin: 3px;
+  background: linear-gradient(112deg, #f930f9, #0f938f);
+  animation: bounce 0.5s infinite alternate;
+  border-radius: 100px;
+}
+
+@keyframes bounce {
+  to {
+    opacity: 0.3;
+    transform: translate3d(0, -16px, 0);
+  }
+}
+
+.box:nth-child(odd) {
+  animation: spinLeft 2.5s 0.2s linear both infinite;
+}
+.box:nth-child(even) {
+  animation: spinRight 1s 0.4s linear both infinite;
+}
+.box:nth-child(2n) {
+  animation: pulse 2s ease-in-out 0.1s infinite;
+}
+.box:nth-child(4n) {
+  animation-direction: reverse;
+}
+@keyframes pulse {
+  50% {
+    transform: scale(1.8);
+  }
+  70% {
+    transform: scale(0.6);
+  }
+}
+
+@keyframes spinLeft {
+  from {
+    transform: rotate(0deg) translate(50px);
+  }
+  to {
+    transform: rotate(360deg) translate(50px);
+  }
+}
+@keyframes spinRight {
+  from {
+    transform: rotate(360deg) translate(50px);
+  }
+  to {
+    transform: rotate(0deg) translate(50px);
+  }
+}
+
+/* Navbar Styling */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  padding-top: 30px;
+  display: block;
+  padding-bottom: 30px;
+  background: #ffffff;
+}
+.nav_left,
+.nav_middle,
+.nav_right {
+  display: inline-block;
+}
+.nav_left {
+  width: 20%;
+  text-align: center;
+}
+.nav_middle {
+  width: 45%;
+  text-align: left;
+}
+.nav_middle a {
+  text-decoration: none;
+  font-family: "poppins", sans-serif;
+  text-transform: uppercase;
+  color: #1d2547;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 39px 22px;
+}
+.nav_middle a:hover {
+  color: #6f42c1;
+}
+.nav_right {
+  width: 34%;
+  text-align: center;
+}
+.nav_right i {
+  margin: 0px 10px;
+  border: 1px solid rgba(29, 37, 71, 0.12);
+  padding: 10px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+#menu {
+  display: none;
+}
+.nav_right i:hover {
+  transform: rotate(360deg);
+}
+
+.social_media,
+.useful {
+  display: inline-block;
+}
+.useful {
+  margin-left: 20px;
+}
+#search {
+  background: rgb(247, 249, 254);
+}
+
+#shop {
+  padding: 12px 20px;
+  background: #9e79ff;
+  color: white;
+  border-radius: 50px;
+  text-align: center;
+}
+/* Hero Section Styling */
+
+.hero {
+  background-image: url("https://preview.colorlib.com/theme/shionhouse/assets/img/hero/h1_hero1.png");
+  margin-top: 50px;
+  margin: auto;
+  padding: 10px 40px;
+  width: 85vw;
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  animation: animate 15s ease-in-out infinite;
+  margin-bottom: 50px;
+}
+
+.hero_text {
+  color: white;
+  text-transform: uppercase;
+  font-family: "Cinzel", serif;
+  font-size: 120px;
+  line-height: 120px;
+  font-weight: 700;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+.hero_shop_now {
+  background: #9e78fe;
+  color: white;
+  font-family: "poppins", serif;
+  font-size: 18px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  display: block;
+  width: 15%;
+  margin: auto;
+  cursor: pointer;
+}
+.hero_shop_now:hover,
+.read_now:hover {
+  background: #8c6ae4;
+}
+@keyframes animate {
+  0% {
+    background-image: url("https://preview.colorlib.com/theme/shionhouse/assets/img/hero/h1_hero1.png");
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+  }
+  50% {
+    background-image: url("https://preview.colorlib.com/theme/shionhouse/assets/img/hero/h1_hero2.png");
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+  }
+  80% {
+    background-image: url("https://preview.colorlib.com/theme/shionhouse/assets/img/hero/h1_hero3.png");
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+  }
+}
+/* Card List Styling */
+
+.card_list {
+  display: block;
+  margin-left: 30px;
+  margin-bottom: 50px;
+}
+.card1 {
+  display: inline-block;
+  width: 22%;
+  height: 400px;
+  background-image: url("https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/popular1.png");
+  background-size: cover;
+  cursor: pointer;
+  margin-left: 35px;
+}
+.card2 {
+  display: inline-block;
+  width: 22%;
+  height: 400px;
+  background-image: url("https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/popular2.png");
+  background-size: cover;
+  cursor: pointer;
+  margin-left: 22px;
+}
+.card3 {
+  display: inline-block;
+  width: 22%;
+  height: 400px;
+  background-image: url("https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/popular3.png");
+  background-size: cover;
+  cursor: pointer;
+  margin-left: 22px;
+}
+.card4 {
+  display: inline-block;
+  width: 22%;
+  height: 400px;
+  background-image: url("https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/popular4.png");
+  background-size: cover;
+  cursor: pointer;
+  margin-left: 22px;
+}
+
+.shop {
+  visibility: hidden;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 50%;
+  padding: 10px 25px;
+  font-size: 18px;
+  font-family: "poppins", serif;
+  background-color: #9f78ff;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.glasses,
+.watches,
+.jackets,
+.clothes {
+  visibility: hidden;
+  position: relative;
+  top: 150px;
+  color: white;
+  font-size: 30px;
+  font-family: "Cinzel", serif;
+  width: 100%;
+  background-color: rgba(29, 37, 71, 0.5);
+  text-align: center;
+  /* bottom: 0; */
+}
+.card1:hover,
+.card2:hover,
+.card3:hover,
+.card4:hover {
+  .shop,
+  .glasses,
+  .watches,
+  .jackets,
+  .clothes {
+    visibility: visible;
+  }
+}
+
+/* New Arrival List Styling */
+
+.new_arrival_text {
+  text-align: center;
+  font-family: "Cinzel", serif;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 84px;
+  color: rgb(20, 12, 64);
+  margin-top: 90px;
+}
+.new_arrival_item_list_line1,
+.new_arrival_item_list_line2 {
+  display: block;
+  width: 100%;
+  margin-top: 50px;
+}
+.list_item_container1,
+.list_item_container2,
+.list_item_container3,
+.list_item_container4 {
+  display: inline-block;
+  width: 23.5%;
+  cursor: pointer;
+}
+.list_item_container1 {
+  margin-left: 30px;
+}
+.display_image,
+.item_name,
+.rating,
+.cost {
+  width: 100%;
+  text-align: center;
+}
+.item_name,
+.cost {
+  font-family: "poppins", serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgb(20, 12, 64);
+}
+.rating {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.list_item_container1:hover,
+.list_item_container2:hover,
+.list_item_container3:hover,
+.list_item_container4:hover {
+  .item_name {
+    text-decoration: underline solid black;
+  }
+}
+.new_arrival_item_list_line2 {
+  margin-bottom: 70px;
+}
+
+.browse_more_btn {
+  display: block;
+  text-align: center;
+  padding: 17px 42px;
+  color: #9e79ff;
+  border: 1px solid #9f78ff;
+  background-color: transparent;
+  border-radius: 5px;
+  font-weight: 500;
+  font-family: "poppins", serif;
+  font-size: 16px;
+  line-height: 24px;
+  width: max-content;
+  margin: auto;
+  cursor: pointer;
+  margin-bottom: 120px;
+}
+.browse_more_btn:hover {
+  color: white;
+  background-color: #9f78ff;
+}
+
+/*  About us Hero Section  Styling */
+.abt_us_container {
+  background-image: url("https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/section_bg01.png");
+  margin: auto;
+  width: 90vw;
+  height: 95vh;
+  background-size: cover;
+  background-position: center;
+  /* filter: brightness(80%); */
+}
+.abt_us_container h1 {
+  text-transform: uppercase;
+  color: white;
+  font-family: "Cinzel", serif;
+  font-weight: 500;
+  font-size: 70px;
+  line-height: 84px;
+  text-align: left;
+  margin-left: 25%;
+  padding-top: 18%;
+}
+.about_btn {
+  background: #9e78fe;
+  color: white;
+  font-family: "poppins", serif;
+  font-size: 18px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  display: block;
+  width: 15%;
+  margin: auto;
+  cursor: pointer;
+}
+.about_btn:hover {
+  background: #8c6ae4;
+}
+/* Redirection Bar Styling */
+
+.redirection {
+  background: #9f78ff;
+  position: relative;
+  top: 90%;
+  left: 94%;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 50px;
+  text-align: center;
+  padding: 10px;
+  z-index: 10;
+  position: sticky;
+  bottom: 10px;
+  font-size: 20px;
+}
+
+/* Read More Section  */
+.read_more_section {
+  display: block;
+  width: 100%;
+  margin-top: 50px;
+}
+.read_more_1,
+.read_more_2 {
+  display: inline-block;
+  width: 43%;
+}
+
+.read_more_1 {
+  background-image: url("https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/popular-imtes1.png");
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+  margin-left: 70px;
+}
+.read_more_1 h1,
+.read_more_2 h1 {
+  margin-top: 60%;
+  text-align: left;
+  margin-left: 50px;
+  color: white;
+  font-family: "poppins", sans-serif;
+  font-size: 34px;
+  line-height: 44px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.read_now {
+  background: #9e78fe;
+  color: white;
+  font-family: "poppins", serif;
+  font-size: 18px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  display: block;
+  width: 30%;
+  margin-left: 70px;
+  cursor: pointer;
+}
+.read_more_2 {
+  background-image: url("https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/popular-imtes2.png");
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+  margin-left: 70px;
+}
+/* services Section Styling */
+.services_list {
+  margin: auto;
+  width: 90vw;
+  margin-top: 50px;
+  display: block;
+  background-color: #f7f7fd;
+  padding: 120px 0px;
+}
+.service_1,
+.service_2,
+.service_3,
+.service_4 {
+  display: inline-block;
+  width: 23%;
+}
+.service_1 {
+  margin-left: 30px;
+}
+.service_imp_more {
+  font-family: "poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgb(0, 0, 0);
+}
+.service_imp_less {
+  font-family: "poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgb(87, 102, 126);
+}
+/* Footer Styling */
+.footer {
+  width: 90vw;
+  margin: auto;
+  margin-top: 0px;
+  background-color: #1c2447;
+  padding-top: 100px;
+  margin-bottom: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.column_1 {
+  width: 15%;
+  margin-left: 50px;
+}
+
+.plain {
+  color: white;
+  text-decoration: none;
+  font-family: "poppins", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 300;
+  margin-top: 25px;
+}
+.column_2,
+.column_3,
+.column_4,
+.column_5 {
+  margin-left: 120px;
+}
+
+.footer_main {
+  color: white;
+  font-family: "poppins", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  margin-top: 0px;
+  line-height: 20px;
+  margin-bottom: 30px;
+}
+.footer_link {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-family: "poppins", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 300;
+}
+.footer_link:hover {
+  color: rgb(159, 120, 255);
+  text-decoration: underline 1px rgb(159, 120, 255);
+}
+
+.twitter_container,
+.fb_container,
+.pinterest_container {
+  display: inline-block;
+  margin: 15px 10px;
+  border: 1px solid white;
+  padding: 10px 10px;
+  border-radius: 100%;
+  text-align: center;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  background-color: transparent;
+}
+.twitter_container:hover,
+.fb_container:hover,
+.pinterest_container:hover {
+  background: #9e78fe;
+}
+
+.last_line {
+  display: block;
+  color: white;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 28px;
+  color: rgb(194, 197, 219);
+  font-family: "poppins", sans-serif;
+  margin-bottom: 30px;
+}
+
+.colorib {
+  color: #8c6ae4;
+}
+
+/* Responsiveness Started Here */
+
+@media (max-width: 991px) and (orientation: portrait) {
+  #menu,
+  .nav_left {
+    display: inline-block;
+    width: 49%;
+  }
+
+  .nav_left {
+    text-align: center;
+  }
+  #menu {
+    text-align: center;
+    cursor: pointer;
+  }
+  .nav_middle,
+  .nav_right,
+  .useful {
+    display: none;
+  }
+  .nav_middle {
+    display: none;
+    animation: initial 3s ease-in-out;
+    transition: 2000ms;
+  }
+
+  #home,
+  #contact,
+  #about,
+  #shop {
+    /* width: 90vw; */
+    display: block;
+    text-align: left;
+    margin-left: 80px;
+    font-size: 14px;
+    background: transparent;
+    color: black;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: fit-content;
+  }
+
+  #contact {
+    position: relative;
+    bottom: 20px;
+  }
+  .hidden {
+    display: block;
+  }
+  .hero {
+    margin-bottom: 50px;
+    display: block;
+    margin: auto;
+    width: 80vw;
+    margin-bottom: 50px;
+  }
+  .hero_text {
+    color: white;
+    text-transform: uppercase;
+    font-family: "Cinzel", serif;
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 700;
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin-top: 50%;
+  }
+  .card_list {
+    display: block;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+  .card1 {
+    display: inline-block;
+    width: 42%;
+    height: 400px;
+    background-image: url("https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/popular1.png");
+    background-size: cover;
+    cursor: pointer;
+    margin: auto;
+    margin-right: 20px;
+  }
+  .card2 {
+    display: inline-block;
+    width: 42%;
+    height: 400px;
+    background-image: url("https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/popular2.png");
+    background-size: cover;
+    cursor: pointer;
+    margin: auto;
+    margin-left: 20px;
+  }
+  .card3 {
+    display: inline-block;
+    width: 42%;
+    height: 400px;
+    background-image: url("https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/popular3.png");
+    background-size: cover;
+    cursor: pointer;
+    margin: auto;
+    margin-right: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .card4 {
+    display: inline-block;
+    width: 42%;
+    height: 400px;
+    background-image: url("https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/popular4.png");
+    background-size: cover;
+    cursor: pointer;
+    margin: auto;
+    margin-left: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .glasses,
+  .watches,
+  .jackets,
+  .clothes {
+    visibility: hidden;
+    position: relative;
+    top: 120px;
+    color: white;
+    font-size: 30px;
+    font-family: "Cinzel", serif;
+    width: 100%;
+    background-color: rgba(29, 37, 71, 0.5);
+    text-align: center;
+    /* bottom: 0; */
+  }
+  /* New Arrival Styling */
+  .new_arrival_text {
+    text-align: center;
+    font-family: "Cinzel", serif;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 84px;
+    color: rgb(20, 12, 64);
+    margin-top: 90px;
+  }
+  .new_arrival_item_list_line1,
+  .new_arrival_item_list_line2 {
+    display: inline-block;
+    width: 100%;
+    margin-top: 50px;
+    margin: auto;
+  }
+  .list_item_container1,
+  .list_item_container2,
+  .list_item_container3,
+  .list_item_container4 {
+    display: inline-block;
+    width: 42%;
+    cursor: pointer;
+    margin-top: 30px;
+  }
+  .list_item_container1,
+  .list_item_container3 {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .display_image,
+  .item_name,
+  .rating,
+  .cost {
+    width: 100%;
+    text-align: center;
+  }
+  .item_name,
+  .cost {
+    font-family: "poppins", serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgb(20, 12, 64);
+  }
+  .rating {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .new_arrival_item_list_line2 {
+    margin-bottom: 70px;
+  }
+  .browse_more_btn {
+    display: block;
+    text-align: center;
+    padding: 17px 42px;
+    color: #9e79ff;
+    border: 1px solid #9f78ff;
+    background-color: transparent;
+    border-radius: 5px;
+    font-weight: 500;
+    font-family: "poppins", serif;
+    font-size: 16px;
+    line-height: 24px;
+    width: max-content;
+    margin: auto;
+    cursor: pointer;
+    margin-bottom: 120px;
+  }
+  .browse_more_btn:hover {
+    color: white;
+    background-color: #9f78ff;
+  }
+  /*  About us Hero Section  Styling */
+  .abt_us_container {
+    background-image: url("https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/section_bg01.png");
+    margin: auto;
+    width: 90vw;
+    height: 95vh;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 50px;
+  }
+  .abt_us_container h1 {
+    text-transform: uppercase;
+    color: white;
+    font-family: "Cinzel", serif;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 64px;
+    text-align: center;
+    display: block;
+    width: 90%;
+    margin: auto;
+    padding-top: 50%;
+  }
+
+  .about_btn {
+    background: #9e78fe;
+    color: white;
+    font-family: "poppins", serif;
+    font-size: 14px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+    width: 15%;
+    margin: auto;
+    cursor: pointer;
+    margin-top: 50px;
+  }
+  .about_btn:hover {
+    background: #8c6ae4;
+  }
+  /* Read More Section  */
+  .read_more_section {
+    display: block;
+    width: 100%;
+    margin-top: 50px;
+  }
+  .read_more_1,
+  .read_more_2 {
+    display: inline-block;
+    width: 45%;
+  }
+
+  .read_more_1 {
+    background-image: url("https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/popular-imtes1.png");
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    margin-left: 30px;
+    margin-bottom: 50px;
+  }
+  .read_more_1 h1,
+  .read_more_2 h1 {
+    display: block;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-family: "poppins", sans-serif;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 400;
+    cursor: pointer;
+    margin-top: 60%;
+  }
+  .read_now {
+    background: #9e78fe;
+    color: white;
+    font-family: "poppins", serif;
+    font-size: 14px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+    width: 30%;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+  }
+  .read_more_2 {
+    background-image: url("https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/popular-imtes2.png");
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    margin-left: 20px;
+    margin-bottom: 50px;
+  }
+  /* Footer Styling */
+  .footer {
+    width: 95 vw;
+    margin: auto;
+    margin-top: 0px;
+    background-color: #1c2447;
+    padding-top: 100px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .column_1 {
+    width: 48%;
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+  .column_2 {
+    width: 40%;
+    vertical-align: top;
+    margin-left: 32px;
+  }
+
+  .plain {
+    color: white;
+    text-decoration: none;
+    font-family: "poppins", sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 300;
+    margin-top: 25px;
+  }
+
+  .column_3,
+  .column_4,
+  .column_5 {
+    display: inline-block;
+    width: 30%;
+    margin-left: 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .column_3 {
+    margin-top: 50px;
+    margin-left: 20px;
+  }
+
+  .footer_main {
+    color: white;
+    font-family: "poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 0px;
+    line-height: 20px;
+    margin-bottom: 30px;
+  }
+  .footer_link {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-family: "poppins", sans-serif;
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 300;
+  }
+  .footer_link:hover {
+    color: rgb(159, 120, 255);
+    text-decoration: underline 1px rgb(159, 120, 255);
+  }
+
+  .twitter_container,
+  .fb_container,
+  .pinterest_container {
+    display: inline-block;
+    margin: 15px 10px;
+    border: 1px solid white;
+    padding: 10px 10px;
+    border-radius: 100%;
+    text-align: center;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  .twitter_container:hover,
+  .fb_container:hover,
+  .pinterest_container:hover {
+    background: #9e78fe;
+  }
+
+  .last_line {
+    display: block;
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 28px;
+    color: rgb(194, 197, 219);
+    font-family: "poppins", sans-serif;
+    margin-bottom: 30px;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+
+  .colorib {
+    color: #8c6ae4;
+  }
+}
+
+/* Mobile Styling  */
+
+@media (max-width: 600px) and (orientation: portrait) {
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  .navbar {
+    position: sticky;
+    top: 0;
+    display: block;
+    background: #ffffff;
+  }
+  .nav_left {
+    display: inline-block;
+    width: 44%;
+    text-align: left;
+    margin-left: 20px;
+  }
+  #menu {
+    display: inline-block;
+    text-align: right;
+    cursor: pointer;
+    width: 43%;
+  }
+  .nav_middle,
+  .nav_right,
+  .useful {
+    display: none;
+  }
+
+  /* #menu:hover {
+    .nav_middle {
+      display: block;
+      background: #4c4c4c;
+      width: 100vw;
+      position: absolute;
+      top: 90%;
+    }
+    .nav_middle a {
+      display: block;
+      color: white;
+      margin: 0;
+      padding: 5px 0px;
+      text-align: left;
+      margin-left: 10px;
+      text-decoration: none;
+    }
+    .nav_middle a:hover {
+      background-color: rgba(128, 128, 128, 0.488);
+      color: white;
+    }
+  } */
+  .nav_middle {
+    height: fit-content;
+    display: hidden;
+    animation: initial 3s ease-in-out;
+    transition: 2000ms;
+  }
+  #home,
+  #contact,
+  #about,
+  #shop {
+    /* width: 90vw; */
+    display: block;
+    text-align: left;
+    font-size: 20px;
+    background: transparent;
+    color: black;
+    height: fit-content;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+  }
+  #contact {
+    position: relative;
+    bottom: 20px;
+  }
+  .hidden {
+    display: block;
+  }
+
+  .hero {
+    display: block;
+    margin: auto;
+    width: 75vw;
+    height: 70vh;
+    margin-bottom: 50px;
+    margin-top: 20px;
+  }
+  .hero_text {
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-family: "Cinzel", serif;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 700;
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin-top: 50%;
+  }
+  .hero_shop_now {
+    width: 80%;
+    margin-top: 40px;
+  }
+  .card_list {
+    display: block;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+  .card1 {
+    display: block;
+    width: 80%;
+    height: 400px;
+    background-image: url("https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/popular1.png");
+    background-size: cover;
+    cursor: pointer;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+  .card2 {
+    display: block;
+    width: 80%;
+    height: 400px;
+    background-image: url("https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/popular2.png");
+    background-size: cover;
+    cursor: pointer;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+  .card3 {
+    display: block;
+    width: 80%;
+    height: 400px;
+    background-image: url("https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/popular3.png");
+    background-size: cover;
+    cursor: pointer;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+  .card4 {
+    display: block;
+    width: 80%;
+    height: 400px;
+    background-image: url("https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/popular4.png");
+    background-size: cover;
+    cursor: pointer;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+
+  .glasses,
+  .watches,
+  .jackets,
+  .clothes {
+    visibility: hidden;
+    position: relative;
+    top: 150px;
+    color: white;
+    font-size: 30px;
+    font-family: "Cinzel", serif;
+    width: 100%;
+    background-color: rgba(29, 37, 71, 0.5);
+    text-align: center;
+    /* bottom: 0; */
+  }
+  /* New Arrival Styling */
+  .new_arrival_text {
+    text-align: center;
+    font-family: "Cinzel", serif;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 84px;
+    color: rgb(20, 12, 64);
+    margin-top: 90px;
+  }
+  .new_arrival_item_list_line1,
+  .new_arrival_item_list_line2 {
+    display: inline-block;
+    width: 100%;
+    margin-top: 50px;
+    margin: auto;
+  }
+  .list_item_container1,
+  .list_item_container2,
+  .list_item_container3,
+  .list_item_container4 {
+    display: block;
+    width: 80%;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 30px;
+  }
+  .list_item_container1,
+  .list_item_container3 {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .display_image,
+  .item_name,
+  .rating,
+  .cost {
+    width: 100%;
+    text-align: center;
+  }
+  .item_name,
+  .cost {
+    font-family: "poppins", serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgb(20, 12, 64);
+  }
+  .rating {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .new_arrival_item_list_line2 {
+    margin-bottom: 70px;
+  }
+  .browse_more_btn {
+    display: block;
+    text-align: center;
+    padding: 17px 42px;
+    color: #9e79ff;
+    border: 1px solid #9f78ff;
+    background-color: transparent;
+    border-radius: 5px;
+    font-weight: 500;
+    font-family: "poppins", serif;
+    font-size: 16px;
+    line-height: 24px;
+    width: max-content;
+    margin: auto;
+    cursor: pointer;
+    margin-bottom: 120px;
+  }
+  .browse_more_btn:hover {
+    color: white;
+    background-color: #9f78ff;
+  }
+  /*  About us Hero Section  Styling */
+  .abt_us_container {
+    background-image: url("https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/section_bg01.png");
+    display: block;
+    margin: auto;
+    width: 95vw;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 50px;
+  }
+  .abt_us_container h1 {
+    text-transform: uppercase;
+    color: white;
+    font-family: "Cinzel", serif;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    display: block;
+    width: 90%;
+    margin: auto;
+    padding-top: 50%;
+  }
+
+  .about_btn {
+    background: #9e78fe;
+    color: white;
+    font-family: "poppins", serif;
+    font-size: 14px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+    width: 55%;
+    margin: auto;
+    cursor: pointer;
+    margin-top: 50px;
+  }
+  .about_btn:hover {
+    background: #8c6ae4;
+  }
+  /* Read More Section  */
+
+  .read_more_1 {
+    background-image: url("https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/popular-imtes1.png");
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .read_more_1 h1,
+  .read_more_2 h1 {
+    display: block;
+    margin: auto;
+    text-align: left;
+    color: white;
+    font-family: "poppins", sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 400;
+    cursor: pointer;
+    margin-top: 50px;
+    padding-top: 30%;
+    margin-left: 20px;
+  }
+
+  .read_now {
+    background: #9e78fe;
+    color: white;
+    font-family: "poppins", serif;
+    font-size: 14px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+    width: 30%;
+    cursor: pointer;
+    display: block;
+    margin-left: 20px;
+    margin-top: 40px;
+  }
+  .read_more_2 {
+    background-image: url("https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/popular-imtes2.png");
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    width: 95%;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
+
+  /* services Section Styling */
+  .services_list {
+    margin: auto;
+    width: 90vw;
+    margin-top: 50px;
+    display: block;
+    background-color: #f7f7fd;
+    padding: 50px 0px;
+  }
+  .service_1,
+  .service_2,
+  .service_3,
+  .service_4 {
+    display: block;
+    width: 80%;
+  }
+  .service_1 {
+    margin-left: 0px;
+  }
+  .service_imp_more {
+    font-family: "poppins", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgb(0, 0, 0);
+  }
+  .service_imp_less {
+    font-family: "poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgb(87, 102, 126);
+  }
+
+  /* Footer Styling */
+  .footer {
+    width: 95vw;
+    margin: auto;
+    margin-top: 0px;
+    background-color: #1c2447;
+    padding-top: 100px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .column_1 {
+    display: block;
+    width: 80%;
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+  .column_2 {
+    display: block;
+    width: 80%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  .plain {
+    color: white;
+    text-decoration: none;
+    font-family: "poppins", sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 300;
+    margin-top: 25px;
+  }
+
+  .column_3,
+  .column_4,
+  .column_5 {
+    display: block;
+    width: 80%;
+    margin-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+
+  .column_3 {
+    margin-left: 20px;
+  }
+
+  .footer_main {
+    color: white;
+    font-family: "poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 0px;
+    line-height: 20px;
+    margin-bottom: 30px;
+  }
+  .footer_link {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-family: "poppins", sans-serif;
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 300;
+  }
+  .footer_link:hover {
+    color: rgb(159, 120, 255);
+    text-decoration: underline 1px rgb(159, 120, 255);
+  }
+
+  .twitter_container,
+  .fb_container,
+  .pinterest_container {
+    display: inline-block;
+    margin: 15px 10px;
+    border: 1px solid white;
+    padding: 10px 10px;
+    border-radius: 100%;
+    text-align: center;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    margin-bottom: 50px;
+  }
+  .twitter_container:hover,
+  .fb_container:hover,
+  .pinterest_container:hover {
+    background: #9e78fe;
+  }
+
+  .last_line {
+    display: block;
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 28px;
+    color: rgb(194, 197, 219);
+    font-family: "poppins", sans-serif;
+    margin-bottom: 30px;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-left: 30px;
+  }
+
+  .colorib {
+    color: #8c6ae4;
+  }
+}

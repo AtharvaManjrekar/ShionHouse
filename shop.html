@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping page </title>
+    <!-- Fontawesome Kit -->
+    <script src="https://kit.fontawesome.com/ff7fa6e72e.js" crossorigin="anonymous"></script>
+    <!--  Google fonts Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Google fonts Cinzel -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- shop.css -->
+    <link rel="stylesheet" href="shop.css">
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <div class="navbar">
+        <div class="nav_left">
+            <a href="#"><img src="	https://preview.colorlib.com/theme/shionhouse/assets/img/logo/logo.png" alt=""></a>
+        </div>
+        <div class="nav_middle">
+            <a href="index.html">Home</a>
+            <a href="#">Shop</a>
+            <a href="about.html">About</a>
+            <a href="contact_us_page.html">Contact</a>
+        </div>
+        <div class="nav_right">
+            <div class="social_media">
+                <i class="fa-brands fa-twitter "></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-pinterest"></i>
+            </div>
+            <div class="useful">
+                <a href="search_page.html"><i class="fa-solid fa-magnifying-glass" id="search"
+                        style="color: black;"></i></a>
+                <i class="fa-solid fa-cart-shopping" id="shop"></i>
+            </div>
+        </div>
+        <i class="fa-solid fa-bars fa-lg" style="color: #000000;" id="menu"></i>
+    </div>
+    <!-- Page Indicator -->
+    <div class="mini_nav">
+        <a href="index.html">Home</a> > <a href="#">Shop</a>
+    </div>
+    <!-- Product Showcase -->
+    <div class="shop_with_us">shop with us</div>
+    <div class="browse">Browse from 230 latest items</div>
+    <div class="remaining_products_space">
+        <div class="remaining_left_space">
+            <!-- 1st dropdown -->
+            <select name="Category" id="category">
+                <option value="category" class="category">Category</option>
+                <option value="shirt">Shirt</option>
+                <option value="t_shirt">T-Shirt</option>
+                <option value="trouser">Trouser</option>
+                <option value="jacket">Jacket</option>
+            </select>
+            <!-- 2nd dropdown -->
+            <select name="Type" id="type">
+                <option value="type" selected>Type</option>
+                <option value="small">SM</option>
+                <option value="large">LG</option>
+                <option value="xl">XL</option>
+                <option value="xxl">XXL</option>
+            </select>
+            <!-- 3rd dropdown -->
+            <select name="Size" id="size">
+                <option value="size" selected>Size</option>
+                <option value="1.2ft">1.2ft</option>
+                <option value="2.5ft">2.5ft</option>
+                <option value="3.2ft">3.2ft</option>
+                <option value="5.2ft">5.2ft</option>
+            </select>
+            <!-- 4th dropdown -->
+            <select name="Color" id="color">
+                <option value="color" selected>Color</option>
+                <option value="white">White</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+                <option value="sky_blue">Sky Blue</option>
+                <option value="gray">Gray</option>
+            </select>
+            <!-- 5th dropdown -->
+            <select name="Price Range" id="price_range">
+                <option value="Price Range">Price Range</option>
+                <option value="$10 to $20">$10 to $20</option>
+                <option value="$20 to $30">$20 to $30</option>
+                <option value="$50 to $80">$50 to $80</option>
+                <option value="$100 to $120">$100 to $120</option>
+                <option value="$200 to $300">$200 to $300</option>
+                <option value="$500 to $600">$500 to $600</option>
+            </select>
+        </div>
+        <div class="remaining_right_space">
+            <div class="list_1">
+                <img src="https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/arrival2.png" alt="">
+                <div class="item_name">Knitted Jumper</div>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                </div>
+                <div class="cost">$30.00</div>
+            </div>
+            <div class="list_2">
+                <img src="https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/arrival3.png" alt="">
+                <div class="item_name">Knitted Jumper</div>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                </div>
+                <div class="cost">$30.00</div>
+            </div>
+            <div class="list_3">
+                <img src="https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/arrival4.png" alt="">
+                <div class="item_name">Knitted Jumper</div>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                </div>
+                <div class="cost">$30.00</div>
+            </div>
+            <div class="list_4">
+                <img src="https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/arrival5.png" alt="">
+                <div class="item_name">Knitted Jumper</div>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                </div>
+                <div class="cost">$30.00</div>
+            </div>
+            <div class="list_5">
+                <img src="https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/arrival6.png" alt="">
+                <div class="item_name">Knitted Jumper</div>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                </div>
+                <div class="cost">$30.00</div>
+            </div>
+            <div class="list_6">
+                <img src="https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/arrival7.png" alt="">
+                <div class="item_name">Knitted Jumper</div>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                </div>
+                <div class="cost">$30.00</div>
+            </div>
+            <div class="list_7">
+                <img src="https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/arrival8.png" alt="">
+                <div class="item_name">Knitted Jumper</div>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                </div>
+                <div class="cost">$30.00</div>
+            </div>
+            <div class="list_8">
+                <img src="https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/arrival1.png" alt="">
+                <div class="item_name">Knitted Jumper</div>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                </div>
+                <div class="cost">$30.00</div>
+            </div>
+            <div class="browse_more_btn">Browse More</div>
+        </div>
+    </div>
+    <!-- Card List -->
+    <div class="card_list">
+        <div class="card1">
+            <button class="shop">Shop now</button>
+            <div class="glasses">GLASSES</div>
+        </div>
+        <div class="card2">
+            <button class="shop">Shop now</button>
+            <div class="watches">WATCHES</div>
+        </div>
+        <div class="card3">
+            <button class="shop">Shop now</button>
+            <div class="jackets">JACKETS</div>
+        </div>
+        <div class="card4">
+            <button class="shop">Shop now</button>
+            <div class="clothes">CLOTHES</div>
+        </div>
+    </div>
+
+    <div class="services_list">
+        <div class="service_1">
+            <img src="https://preview.colorlib.com/theme/shionhouse/assets/img/icon/services1.svg" alt="">
+            <h2 class="service_imp_more">Fast & Free Delivery</h2>
+            <p class="service_imp_less">Free delivery on all orders</p>
+        </div>
+        <div class="service_2">
+            <img src="https://preview.colorlib.com/theme/shionhouse/assets/img/icon/services2.svg" alt="">
+            <h2 class="service_imp_more">Fast & Free Delivery</h2>
+            <p class="service_imp_less">Free delivery on all orders</p>
+        </div>
+        <div class="service_3">
+            <img src="https://preview.colorlib.com/theme/shionhouse/assets/img/icon/services3.svg" alt="">
+            <h2 class="service_imp_more">Fast & Free Delivery</h2>
+            <p class="service_imp_less">Free delivery on all orders</p>
+        </div>
+        <div class="service_4">
+            <img src="https://preview.colorlib.com/theme/shionhouse/assets/img/icon/services4.svg" alt="">
+            <h2 class="service_imp_more">Fast & Free Delivery</h2>
+            <p class="service_imp_less">Free delivery on all orders</p>
+        </div>
+    </div>
+
+    <!-- Up redirection bar -->
+    <div class="redirection">
+        <a href="#"><i class="fa-sharp fa-solid fa-arrow-turn-up fa-lg" style="color: #ffffff;"></i></a>
+    </div>
+
+    <!-- Footer -->
+
+    <div class="footer">
+        <div class="column_1">
+            <img src="https://preview.colorlib.com/theme/shionhouse/assets/img/logo/logo2_footer.png" alt=""
+                class="footer_logo">
+            <p class="plain">Suspendisse varius enim in eros elementum tristique. Duis cursus mi quis viverra
+                ornare, eros dolor
+                interdum nulla.</p>
+            <div class="twitter_container">
+                <i class="fa-brands fa-twitter " style="color: #ffffff;" id="twitter"></i>
+            </div>
+            <div class="fb_container">
+                <i class="fa-brands fa-facebook-f" style="color: #ffffff;" id="fb"></i>
+            </div>
+            <div class="pinterest_container">
+                <i class="fa-brands fa-pinterest-p" style="color: #ffffff;" id="pinterest"></i>
+            </div>
+        </div>
+        <div class="column_2">
+            <p class="footer_main">Quick links</p>
+            <a class="footer_link" href="#">Image License</a>
+            <a class="footer_link" href="#">Style Guide</a>
+            <a class="footer_link" href="#">privacy policy</a>
+        </div>
+        <div class="column_3">
+            <p class="footer_main">Shop Category</p>
+            <a class="footer_link" href="#">Style Guide</a>
+            <a class="footer_link" href="#">Image License</a>
+            <a class="footer_link" href="#">privacy policy</a>
+        </div>
+        <div class="column_4">
+            <p class="footer_main">Partners</p>
+            <a class="footer_link" href="#">Image License</a>
+            <a class="footer_link" href="#">Style Guide</a>
+            <a class="footer_link" href="#">privacy policy</a>
+        </div>
+        <div class="column_5">
+            <p class="footer_main">Get in touch</p>
+            <a class="footer_link" href="#">(89) 982-278 356</a>
+            <a class="footer_link" href="#">demo@colorlib.com</a>
+            <a class="footer_link" href="#">67/A, Colorlib, Green road, NYC</a>
+        </div>
+        <div class="last_line">Copyright ©2024 All rights reserved | This template is made with <i
+                class="fa-solid fa-heart" style="color: #B197FC;"></i> by <span class="colorib">Colorlib</span></div>
+    </div>
+
+</body>
+
+</html>
