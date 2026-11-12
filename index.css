@@ -163,7 +163,7 @@ body {
 /* Hero Section Styling */
 
 .hero {
-  background-image: url("https://preview.colorlib.com/theme/shionhouse/assets/img/hero/h1_hero1.png");
+  background-image: url("https://preview.themewagon.com/shionhouse/assets/img/hero/h1_hero1.png");
   margin-top: 50px;
   margin: auto;
   padding: 10px 40px;
@@ -207,19 +207,19 @@ body {
 }
 @keyframes animate {
   0% {
-    background-image: url("https://preview.colorlib.com/theme/shionhouse/assets/img/hero/h1_hero1.png");
+    background-image: url("https://preview.themewagon.com/shionhouse/assets/img/hero/h1_hero1.png");
     background-blend-mode: darken;
     background-size: cover;
     background-position: center;
   }
   50% {
-    background-image: url("https://preview.colorlib.com/theme/shionhouse/assets/img/hero/h1_hero2.png");
+    background-image: url("https://preview.themewagon.com/shionhouse/assets/img/hero/h1_hero2.png");
     background-blend-mode: darken;
     background-size: cover;
     background-position: center;
   }
   80% {
-    background-image: url("https://preview.colorlib.com/theme/shionhouse/assets/img/hero/h1_hero3.png");
+    background-image: url("https://preview.themewagon.com/shionhouse/assets/img/hero/h1_hero3.png");
     background-blend-mode: darken;
     background-size: cover;
     background-position: center;
@@ -236,7 +236,7 @@ body {
   display: inline-block;
   width: 22%;
   height: 400px;
-  background-image: url("https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/popular1.png");
+  background-image: url("https://preview.themewagon.com/shionhouse/assets/img/gallery/popular1.png");
   background-size: cover;
   cursor: pointer;
   margin-left: 35px;
@@ -245,7 +245,7 @@ body {
   display: inline-block;
   width: 22%;
   height: 400px;
-  background-image: url("https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/popular2.png");
+  background-image: url("https://preview.themewagon.com/shionhouse/assets/img/gallery/popular2.png");
   background-size: cover;
   cursor: pointer;
   margin-left: 22px;
@@ -254,7 +254,7 @@ body {
   display: inline-block;
   width: 22%;
   height: 400px;
-  background-image: url("https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/popular3.png");
+  background-image: url("https://preview.themewagon.com/shionhouse/assets/img/gallery/popular3.png");
   background-size: cover;
   cursor: pointer;
   margin-left: 22px;
@@ -263,7 +263,7 @@ body {
   display: inline-block;
   width: 22%;
   height: 400px;
-  background-image: url("https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/popular4.png");
+  background-image: url("https://preview.themewagon.com/shionhouse/assets/img/gallery/popular4.png");
   background-size: cover;
   cursor: pointer;
   margin-left: 22px;
@@ -396,7 +396,7 @@ body {
 
 /*  About us Hero Section  Styling */
 .abt_us_container {
-  background-image: url("https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/section_bg01.png");
+  background-image: url("https://preview.themewagon.com/shionhouse/assets/img/gallery/section_bg01.png");
   margin: auto;
   width: 90vw;
   height: 95vh;
@@ -465,7 +465,7 @@ body {
 }
 
 .read_more_1 {
-  background-image: url("https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/popular-imtes1.png");
+  background-image: url("https://preview.themewagon.com/shionhouse/assets/img/gallery/popular-imtes1.png");
   height: 90vh;
   background-size: cover;
   background-position: center;
@@ -499,7 +499,7 @@ body {
   cursor: pointer;
 }
 .read_more_2 {
-  background-image: url("https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/popular-imtes2.png");
+  background-image: url("https://preview.themewagon.com/shionhouse/assets/img/gallery/popular-imtes2.png");
   height: 90vh;
   background-size: cover;
   background-position: center;
@@ -712,7 +712,7 @@ body {
     display: inline-block;
     width: 42%;
     height: 400px;
-    background-image: url("https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/popular1.png");
+    background-image: url("https://preview.themewagon.com/shionhouse/assets/img/gallery/popular1.png");
     background-size: cover;
     cursor: pointer;
     margin: auto;
@@ -722,7 +722,7 @@ body {
     display: inline-block;
     width: 42%;
     height: 400px;
-    background-image: url("https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/popular2.png");
+    background-image: url("https://preview.themewagon.com/shionhouse/assets/img/gallery/popular2.png");
     background-size: cover;
     cursor: pointer;
     margin: auto;
@@ -732,7 +732,7 @@ body {
     display: inline-block;
     width: 42%;
     height: 400px;
-    background-image: url("https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/popular3.png");
+    background-image: url("https://preview.themewagon.com/shionhouse/assets/img/gallery/popular3.png");
     background-size: cover;
     cursor: pointer;
     margin: auto;
@@ -744,7 +744,7 @@ body {
     display: inline-block;
     width: 42%;
     height: 400px;
-    background-image: url("https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/popular4.png");
+    background-image: url("https://preview.themewagon.com/shionhouse/assets/img/gallery/popular4.png");
     background-size: cover;
     cursor: pointer;
     margin: auto;
@@ -844,7 +844,7 @@ body {
   }
   /*  About us Hero Section  Styling */
   .abt_us_container {
-    background-image: url("https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/section_bg01.png");
+    background-image: url("https://preview.themewagon.com/shionhouse/assets/img/gallery/section_bg01.png");
     margin: auto;
     width: 90vw;
     height: 95vh;
@@ -897,7 +897,7 @@ body {
   }
 
   .read_more_1 {
-    background-image: url("https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/popular-imtes1.png");
+    background-image: url("https://preview.themewagon.com/shionhouse/assets/img/gallery/popular-imtes1.png");
     height: 60vh;
     background-size: cover;
     background-position: center;
@@ -935,7 +935,7 @@ body {
     margin-top: 40px;
   }
   .read_more_2 {
-    background-image: url("https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/popular-imtes2.png");
+    background-image: url("https://preview.themewagon.com/shionhouse/assets/img/gallery/popular-imtes2.png");
     height: 60vh;
     background-size: cover;
     background-position: center;
@@ -1168,7 +1168,7 @@ body {
     display: block;
     width: 80%;
     height: 400px;
-    background-image: url("https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/popular1.png");
+    background-image: url("https://preview.themewagon.com/shionhouse/assets/img/gallery/popular1.png");
     background-size: cover;
     cursor: pointer;
     margin: auto;
@@ -1178,7 +1178,7 @@ body {
     display: block;
     width: 80%;
     height: 400px;
-    background-image: url("https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/popular2.png");
+    background-image: url("https://preview.themewagon.com/shionhouse/assets/img/gallery/popular2.png");
     background-size: cover;
     cursor: pointer;
     margin: auto;
@@ -1188,7 +1188,7 @@ body {
     display: block;
     width: 80%;
     height: 400px;
-    background-image: url("https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/popular3.png");
+    background-image: url("https://preview.themewagon.com/shionhouse/assets/img/gallery/popular3.png");
     background-size: cover;
     cursor: pointer;
     margin: auto;
@@ -1198,7 +1198,7 @@ body {
     display: block;
     width: 80%;
     height: 400px;
-    background-image: url("https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/popular4.png");
+    background-image: url("https://preview.themewagon.com/shionhouse/assets/img/gallery/popular4.png");
     background-size: cover;
     cursor: pointer;
     margin: auto;
@@ -1297,7 +1297,7 @@ body {
   }
   /*  About us Hero Section  Styling */
   .abt_us_container {
-    background-image: url("https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/section_bg01.png");
+    background-image: url("https://preview.themewagon.com/shionhouse/assets/img/gallery/section_bg01.png");
     display: block;
     margin: auto;
     width: 95vw;
@@ -1341,7 +1341,7 @@ body {
   /* Read More Section  */
 
   .read_more_1 {
-    background-image: url("https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/popular-imtes1.png");
+    background-image: url("https://preview.themewagon.com/shionhouse/assets/img/gallery/popular-imtes1.png");
     height: 40vh;
     background-size: cover;
     background-position: center;
@@ -1383,7 +1383,7 @@ body {
     margin-top: 40px;
   }
   .read_more_2 {
-    background-image: url("https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/popular-imtes2.png");
+    background-image: url("https://preview.themewagon.com/shionhouse/assets/img/gallery/popular-imtes2.png");
     height: 40vh;
     background-size: cover;
     background-position: center;
